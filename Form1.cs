@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace LB130_Gui
 {
-    public partial class Form1 : Form
+    public partial class LB130_Form : Form
     {
-        public Form1()
+        public LB130_Form()
         {
             InitializeComponent();
         }
@@ -33,6 +33,11 @@ namespace LB130_Gui
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

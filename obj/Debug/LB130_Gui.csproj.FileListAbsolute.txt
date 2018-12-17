@@ -1,0 +1,10 @@
+Z:\Projects\LB130_Gui\LB130_Gui\bin\Debug\LB130_Gui.exe.config
+Z:\Projects\LB130_Gui\LB130_Gui\bin\Debug\LB130_Gui.exe
+Z:\Projects\LB130_Gui\LB130_Gui\bin\Debug\LB130_Gui.pdb
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.csprojAssemblyReference.cache
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.LB130_Form.resources
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.Properties.Resources.resources
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.csproj.GenerateResource.cache
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.csproj.CoreCompileInputs.cache
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.exe
+Z:\Projects\LB130_Gui\LB130_Gui\obj\Debug\LB130_Gui.pdb
