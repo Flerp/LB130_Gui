@@ -30,13 +30,13 @@ namespace LB130_Gui
         {
             this.btn_on = new System.Windows.Forms.Button();
             this.btn_off = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lbl_name = new System.Windows.Forms.Label();
-            this.lbl_IP = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_all_on = new System.Windows.Forms.Button();
             this.btn_all_off = new System.Windows.Forms.Button();
+            this.grid_bulb = new System.Windows.Forms.DataGridView();
+            this.clm_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clm_IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_bulb)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_on
@@ -58,51 +58,15 @@ namespace LB130_Gui
             this.btn_off.Text = "Off";
             this.btn_off.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(215, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 26);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(12, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 26);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(57, 51);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(110, 20);
-            this.lbl_name.TabIndex = 4;
-            this.lbl_name.Text = "Friendly Name";
-            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_name.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lbl_IP
-            // 
-            this.lbl_IP.AutoSize = true;
-            this.lbl_IP.Location = new System.Drawing.Point(259, 51);
-            this.lbl_IP.Name = "lbl_IP";
-            this.lbl_IP.Size = new System.Drawing.Size(87, 20);
-            this.lbl_IP.TabIndex = 5;
-            this.lbl_IP.Text = "IP Address";
-            this.lbl_IP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(418, 12);
+            this.button1.Location = new System.Drawing.Point(418, 315);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 59);
             this.button1.TabIndex = 6;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // btn_all_on
             // 
@@ -122,24 +86,45 @@ namespace LB130_Gui
             this.btn_all_off.Text = "All Off";
             this.btn_all_off.UseVisualStyleBackColor = true;
             // 
+            // grid_bulb
+            // 
+            this.grid_bulb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_bulb.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clm_name,
+            this.clm_IP});
+            this.grid_bulb.Location = new System.Drawing.Point(12, 12);
+            this.grid_bulb.Name = "grid_bulb";
+            this.grid_bulb.RowTemplate.Height = 28;
+            this.grid_bulb.Size = new System.Drawing.Size(529, 297);
+            this.grid_bulb.TabIndex = 9;
+            // 
+            // clm_name
+            // 
+            this.clm_name.HeaderText = "Name";
+            this.clm_name.Name = "clm_name";
+            this.clm_name.Width = 240;
+            // 
+            // clm_IP
+            // 
+            this.clm_IP.HeaderText = "IP Address";
+            this.clm_IP.Name = "clm_IP";
+            this.clm_IP.Width = 240;
+            // 
             // LB130_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 557);
+            this.Controls.Add(this.grid_bulb);
             this.Controls.Add(this.btn_all_off);
             this.Controls.Add(this.btn_all_on);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lbl_IP);
-            this.Controls.Add(this.lbl_name);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_off);
             this.Controls.Add(this.btn_on);
             this.Name = "LB130_Form";
             this.Text = "LB130_Gui";
+            ((System.ComponentModel.ISupportInitialize)(this.grid_bulb)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -147,13 +132,12 @@ namespace LB130_Gui
 
         private System.Windows.Forms.Button btn_on;
         private System.Windows.Forms.Button btn_off;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Label lbl_IP;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_all_on;
         private System.Windows.Forms.Button btn_all_off;
+        private System.Windows.Forms.DataGridView grid_bulb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clm_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clm_IP;
     }
 }
 

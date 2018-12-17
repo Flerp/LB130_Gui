@@ -41,5 +41,10 @@ namespace LB130_Gui
         {
 
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
